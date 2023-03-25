@@ -1,0 +1,79 @@
+.container {
+    width: 900px;
+    margin: 20px auto;
+  }
+  
+  .video {
+    width: 100%;
+    height:auto;
+  
+  
+  }
+  
+  .video-player{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    background-color: black;
+  }
+  
+  .controls{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    box-sizing: border-box;
+    z-index: 1;
+  }
+  
+  .play-pause,.mute,.volume,.progress,.time,.fullscreen{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .play-pause:hover,.mute:hover,.fullscreen:hover{
+    color: #ccc;
+  }
+  
+  .mute{
+    margin: 10px;
+  }
+  
+  .volume-slider{
+    width: 80px;
+  }
+  
+  .progress{
+    flex: 1;
+    height: 4px;
+    margin: 0 10px;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .progress-bar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgb(255, 0, 0);
+  }
+  
+  .time{
+    font-size: 14px;
+  }
+  
+  .fullscreen{
+    margin-left: 10px;
+  }

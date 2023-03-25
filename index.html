@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Test</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="container">
+    <h1>Video</h1>
+
+    <div class="video-player">
+      <video class="video">
+        <source src="media/zoom.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <div class="controls">
+        <button class="play-pause">
+          <span class="fa-solid fa-play"></span>
+        </button>
+        <button class="mute">
+          <span class="fa-solid fa-volume-high"></span>
+        </button>
+        <div class="volume">
+          <input type="range" class="volume-slider" min="0" max="1" step="0.01" value="1" />
+        </div>
+
+        <div class="progress">
+          <div class="progress-bar"></div>
+        </div>
+
+        <div class="time">
+          <span class="current-time">0:00</span> / <span class="duration">0:00</span>
+        </div>
+
+        <button class="fullscreen">
+          <span class="fa-solid fa-expand"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
